@@ -1,78 +1,33 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+
+
+<html lang="en">
 
 <head>
-
-    <meta charset="utf-8">
-    <title>Simple Calculator using HTML, CSS and JavaScript</title>
-
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
+    <div class="wrapper">
+        <header>My To do List</header>
+        <div class="inputField">
+            <input type="text" placeholder="Add your new task">
+            <button><i class="fas fa-plus"></i></button>
+        </div>
+        <ul class="todoList">
 
-    <h1>Calculator</h1>
-    <table class="calculator">
+        </ul>
+        <div class="footer">
+            <span>You have <span class="pendingTasks"></span> Remaining tasks</span>
+            <button>Clear All Tasks</button>
+        </div>
+    </div>
 
-        <tr>
-
-            <td colspan="3"> <input class="display-box" type="text" id="result" disabled /> </td>
-
-            <!-- clearScreen() function clears all the values -->
-
-            <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
-        </tr>
-
-        <tr>
-
-            <!-- display() function displays the value of clicked button -->
-
-            <td> <input type="button" value="1" onclick="display('1')" /> </td>
-
-            <td> <input type="button" value="2" onclick="display('2')" /> </td>
-
-            <td> <input type="button" value="3" onclick="display('3')" /> </td>
-
-            <td> <input type="button" value="/" onclick="display('/')" /> </td>
-        </tr>
-
-        <tr>
-
-            <td> <input type="button" value="4" onclick="display('4')" /> </td>
-
-            <td> <input type="button" value="5" onclick="display('5')" /> </td>
-
-            <td> <input type="button" value="6" onclick="display('6')" /> </td>
-
-            <td> <input type="button" value="-" onclick="display('-')" /> </td>
-        </tr>
-
-        <tr>
-
-            <td> <input type="button" value="7" onclick="display('7')" /> </td>
-
-            <td> <input type="button" value="8" onclick="display('8')" /> </td>
-
-            <td> <input type="button" value="9" onclick="display('9')" /> </td>
-
-            <td> <input type="button" value="+" onclick="display('+')" /> </td>
-        </tr>
-
-        <tr>
-
-            <td> <input type="button" value="." onclick="display('.')" /> </td>
-
-            <td> <input type="button" value="0" onclick="display('0')" /> </td>
-
-            <!-- calculate() function evaluates the mathematical expression -->
-
-            <td> <input type="button" value="=" onclick="calculate()" id="btn" /> </td>
-
-            <td> <input type="button" value="*" onclick="display('*')" /> </td>
-        </tr>
-    </table>
-
-    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
